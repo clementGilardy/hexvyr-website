@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HEXVYR — Local League of Legends companion</title>
+    <meta
+      name="description"
+      content="HEXVYR is an independent Windows desktop companion for League of Legends with champion-select and in-game overlays. Local-first. No HEXVYR account."
+    />
+    <meta name="theme-color" content="#eef2f5" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site-header">
+        <a class="wordmark" href="./">HEXVYR</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="privacy.html">Privacy</a>
+          <a href="https://github.com/clementGilardy">GitHub</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="brand">
+          <p class="hero-brand" id="brand"><span>HEXVYR</span></p>
+          <div class="hero-rule" aria-hidden="true"></div>
+          <h2>A local League companion for champion select and live games.</h2>
+          <p class="hero-lead">
+            Independent Windows desktop overlays that stay on your machine.
+            No HEXVYR account. No HEXVYR cloud.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="privacy.html">Privacy policy</a>
+            <a class="btn btn-ghost" href="https://github.com/clementGilardy">Maintainer on GitHub</a>
+          </div>
+          <p class="status-note">
+            Not publicly released yet. This page describes the current desktop product for Riot Games API review.
+          </p>
+        </section>
+
+        <section class="section" aria-labelledby="use-cases-title">
+          <h2 id="use-cases-title">Two moments in a match</h2>
+          <p class="section-intro">
+            HEXVYR runs beside the League client on Windows. It focuses on
+            champion select and the live game—where contextual information helps most.
+          </p>
+          <div class="use-cases">
+            <article class="use-case">
+              <span class="use-case-label">Champion select</span>
+              <h3>See the lobby before the game starts</h3>
+              <p>
+                The champion-select overlay surfaces relevant information about
+                allies, opponents, and champion matchups while the draft is underway.
+              </p>
+            </article>
+            <article class="use-case">
+              <span class="use-case-label">In game</span>
+              <h3>Keep context during the match</h3>
+              <p>
+                The in-game overlay presents contextual champion, item, and gameplay
+                information where the current build supports it—without taking over your screen.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="local-title">
+          <h2 id="local-title">Built to stay local</h2>
+          <p class="section-intro">
+            HEXVYR is a personal desktop tool. It is not a web app and does not
+            require a HEXVYR login.
+          </p>
+          <ul class="principles">
+            <li>
+              <strong>Your machine.</strong>
+              Settings, your optional Riot API key, and game-data caches live under Windows user data on the PC that runs HEXVYR.
+            </li>
+            <li>
+              <strong>Riot data where it belongs.</strong>
+              When you supply a Riot API key, HEXVYR calls Riot Games APIs and Data Dragon resources directly from your computer for player, match, and static game data.
+            </li>
+            <li>
+              <strong>No HEXVYR backend.</strong>
+              There is no HEXVYR account system and no HEXVYR remote server collecting your play data.
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>
+          HEXVYR is an independent Windows companion for League of Legends.
+          Product status, privacy details, and data handling are documented on this site.
+        </p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy policy</a>
+          <a href="riot.txt">Riot verification file</a>
+          <a href="https://github.com/clementGilardy">GitHub</a>
+        </div>
+        <p class="disclaimer">
+          HEXVYR is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties.
+          League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc.
+          HEXVYR is not affiliated with, associated with, authorized by, endorsed by, or in any way officially connected with Riot Games.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

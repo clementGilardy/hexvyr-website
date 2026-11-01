@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy — HEXVYR</title>
+    <meta
+      name="description"
+      content="How HEXVYR accesses, processes, and stores data on your Windows PC."
+    />
+    <meta name="theme-color" content="#eef2f5" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site-header">
+        <a class="wordmark" href="./">HEXVYR</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="privacy.html" aria-current="page">Privacy</a>
+          <a href="https://github.com/clementGilardy">GitHub</a>
+        </nav>
+      </header>
+
+      <main>
+        <header class="page-hero">
+          <h1>Privacy</h1>
+          <p>
+            This page describes how the HEXVYR desktop application handles data,
+            based on the current product behavior. It is not legal advice.
+          </p>
+        </header>
+
+        <article class="prose">
+          <h2>Summary</h2>
+          <p>
+            HEXVYR is a local Windows desktop application. It does not create HEXVYR
+            user accounts and does not operate a HEXVYR cloud service that receives
+            your gameplay data. Data used by the app is processed on your computer
+            and, when you choose to enable them, requested from Riot Games services
+            and related public game-data CDNs.
+          </p>
+
+          <h2>This website</h2>
+          <p>
+            The public product pages on GitHub Pages are static files. They do not
+            use analytics scripts, advertising trackers, or cookies. Visiting these
+            pages does not send product telemetry to HEXVYR.
+          </p>
+
+          <h2>What HEXVYR accesses</h2>
+          <ul>
+            <li>
+              <strong>Local League Client (when the client is running).</strong>
+              HEXVYR reads champion-select and related session information from the
+              League client on your machine so overlays can reflect the current lobby.
+            </li>
+            <li>
+              <strong>Local Live Client Data (during a match).</strong>
+              During loading and live games, HEXVYR may read the official local Live
+              Client Data API on your machine for in-match context.
+            </li>
+            <li>
+              <strong>Riot Games API (optional).</strong>
+              If you paste a personal Riot API key and a Riot ID into settings,
+              HEXVYR calls Riot Games APIs from your computer for account, match,
+              ranked, and related player information you request in the app.
+            </li>
+            <li>
+              <strong>Static game data.</strong>
+              HEXVYR downloads champion, item, and related catalog data and icon URLs
+              from Riot Data Dragon (and may reference Community Dragon asset URLs for
+              some imagery). Catalog files can be cached on disk for reuse.
+            </li>
+          </ul>
+
+          <h2>What HEXVYR stores on your PC</h2>
+          <p>
+            On Windows, application data lives under the HEXVYR user-data directory
+            (typically <code>%APPDATA%\HEXVYR</code>). Depending on use, this may include:
+          </p>
+          <ul>
+            <li>
+              Local settings such as Riot ID fields, platform preference, overlay-related
+              preferences, and—if you save one—your Riot API key in
+              <code>app-settings.json</code>.
+            </li>
+            <li>Saved overlay window positions in <code>overlay-bounds.json</code>.</li>
+            <li>A local Data Dragon catalog cache.</li>
+            <li>
+              Short-lived in-memory caches for match history and related responses while
+              the application is running.
+            </li>
+          </ul>
+          <p>
+            The Riot API key is stored locally for the app to use. It is not displayed
+            back in the settings UI after being saved, and it is not sent to a HEXVYR server.
+          </p>
+
+          <h2>What HEXVYR does not do</h2>
+          <ul>
+            <li>It does not require a HEXVYR account or password.</li>
+            <li>It does not run a HEXVYR remote backend that stores your matches or API key.</li>
+            <li>It does not sell personal data.</li>
+            <li>
+              This website does not claim that “no data is collected” in every sense:
+              the desktop app necessarily processes game and player data locally, and
+              optional Riot API calls send requests from your machine to Riot.
+            </li>
+          </ul>
+
+          <h2>Third parties</h2>
+          <p>
+            When Riot API, Data Dragon, Community Dragon, or the League client local
+            endpoints are used, those services process requests according to their own
+            terms and policies. HEXVYR does not control Riot Games’ systems.
+          </p>
+
+          <h2>Contact</h2>
+          <p>
+            No public support email is published for HEXVYR at this time.
+            The maintainer’s public GitHub profile is
+            <a href="https://github.com/clementGilardy">github.com/clementGilardy</a>.
+          </p>
+
+          <h2>Changes</h2>
+          <p>
+            If HEXVYR’s data handling changes in a material way, this page should be
+            updated to match the shipped behavior.
+          </p>
+
+          <p><a href="./">← Back to HEXVYR</a></p>
+        </article>
+      </main>
+
+      <footer class="site-footer">
+        <p class="disclaimer">
+          HEXVYR is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties.
+          League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
